@@ -19,15 +19,15 @@ fn it_should_return_number_for_all_other_numbers() {
 	assert_eq!("1", fizz_buzzer(1))
 }
 
-fn fizz_buzzer(x: i32) -> String {
-	if x % 15 == 0 {
+fn fizz_buzzer(number: i32) -> String {
+	if number % 15 == 0 {
 		"fizzbuzz".to_string()		
-	} else if x % 3 == 0 {
+	} else if number % 3 == 0 {
 		"fizz".to_string()	
-	} else if x  % 5 == 0 {
+	} else if number  % 5 == 0 {
 		"buzz".to_string()
 	} else {
-		x.to_string()
+		number.to_string()
 	}
 
 }
